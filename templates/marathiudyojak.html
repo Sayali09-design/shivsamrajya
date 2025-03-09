@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Shivsamragya Website</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    {% block content %}
+
+
+
+    <!-- Marathi Udyojak Form Start -->
+    <div class="containerr-xxl pt-5 bg-white">
+        <div class="container pt-4">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        
+                <h1 class="sub mb-5 mt-5">Marathi Udyojak Form / मराठी उद्योजक फॉर्म
+                </h1>
+            </div>
+        <form id="cropForm">
+            <div class="mb-3">
+                <label class="form-label"><b>Company Name / कंपनीचे नाव</b></label>
+                <input type="text" class="form-control rounded-pill" id="companyName" required>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <label class="form-label"><b> Mobile Number / मोबाईल नंबर </b></label>
+                    <input type="number" class="form-control rounded-pill" id="mbl" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label class="form-label"><b>Email / ईमेल</b> </label>
+                    <input type="text" class="form-control rounded-pill" id="emaill" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label class="form-label"><b>Ownership Type / मालकी हक्काचा प्रकार</b></label>
+                    <input type="text" class="form-control rounded-pill" id="ownership" required>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label"><b>Primary Location / मुख्य स्थान</b></label>
+                <textarea class="form-control rounded-pill" id="locationn" rows="2" required></textarea>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <label class="form-label"><b>Primary Business Type / मुख्य व्यवसाय प्रकार</b></label>
+                    <input type="text" class="form-control rounded-pill" id="businesstype" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label class="form-label"><b>Category / वर्ग</b> </label>
+                    <input type="text" class="form-control rounded-pill" id="category" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label class="form-label"><b>Sub Category / उपवर्ग</b></label>
+                    <input type="text" class="form-control rounded-pill" id="subcategory" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <label class="form-label"><b>Corporate Identification Number (CIN) / कॉर्पोरेट ओळख क्रमांक</b></label>
+                    <input type="text" class="form-control rounded-pill" id="idnum" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label class="form-label"><b>Year of Establishment / स्थापनेचा वर्ष</b></label>
+                    <input type="date" class="form-control rounded-pill" id="yr" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label class="form-label"><b>Age of Company / कंपनीचे वय</b></label>
+                    <input type="text" class="form-control rounded-pill" id="companyage">
+                </div>
+            </div>
+
+
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-light bg-danger me-2 rounded-pill">Submit</button>
+                <button type="reset" class="btn btn-light bg-success rounded-pill">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Marathi Udyojak Form End -->
+
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    {% endblock %}
+</body>
+
+</html>

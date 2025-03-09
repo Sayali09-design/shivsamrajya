@@ -14,5 +14,8 @@ def cropregistrationPage(request):
 def healthcheckupPage(request):
     return render(request,"healthcheckup.html")
 
+def bachatgatPage(request):
+    return render(request,"bachatgat.html")
+
 def marathiudyojakPage(request):
     return render(request,"marathiudyojak.html")
