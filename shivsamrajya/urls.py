@@ -24,6 +24,7 @@ urlpatterns = [
     path('contact/', views.contactPage),
     path('cropregistration/', views.cropregistrationPage),
     path('healthcheckup/', views.healthcheckupPage),
+    path('education/', views.educationPage),
     path('bachatgat/', views.bachatgatPage),
     path('marathiudyojak/', views.marathiudyojakPage),
     

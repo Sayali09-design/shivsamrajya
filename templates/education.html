@@ -1,0 +1,320 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Shivsamragya Website</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    {% block content %}
+
+
+
+    <!-- Education Form Start -->
+    <div class="containerr-xxl pt-5 bg-white">
+        <div class="container pt-4">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+
+                <h1 class="sub mb-5 mt-5">Student Education Form ( विद्यार्थी शिक्षण फॉर्म )</h1>
+            </div>
+
+            <form id="cropForm">
+                <h4 class="sub">Personal Information (व्यक्तिक माहिती)</h4>
+                <div class="mb-3">
+                    <label class="form-label"><b>Student's Full Name ( विद्यार्थ्याचे पूर्ण नाव )</b></label>
+                    <input type="text" class="form-control rounded-pill" id="fullName" required>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Email ( ईमेल )</b></label>
+                        <input type="text" class="form-control rounded-pill" id="plantingDate" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Student's Mobile Number ( विद्यार्थ्याचा मोबाईल नंबर )</b> </label>
+                        <input type="number" class="form-control rounded-pill" id="harvestDate" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Gender ( लिंग )</b></label>
+                        <input type="text" class="form-control rounded-pill" id="cropName" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label"><b>Address ( पत्ता )</b></label>
+                    <textarea class="form-control rounded-pill" id="address" rows="2" required></textarea>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Age ( वय )</b></label>
+                        <input type="text" class="form-control rounded-pill" id="plantingDate" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Date Of Birth ( जन्मतारीख )</b> </label>
+                        <input type="date" class="form-control rounded-pill" id="harvestDate" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Student's Birth Place ( विद्यार्थ्याचे जन्मस्थान )</b></label>
+                        <input type="text" class="form-control rounded-pill" id="cropName" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>City ( शहर )</b></label>
+                        <input type="text" class="form-control rounded-pill" id="cropArea" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>State ( राज्य )</b></label>
+                        <input type="text" class="form-control rounded-pill" id="aadharNumber" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Pincode ( पिन कोड )</b></label>
+                        <input type="text" class="form-control rounded-pill" id="groupNumber">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Nationality ( राष्ट्रीयत्व )</b></label>
+                        <input type="text" class="form-control rounded-pill" id="cropArea" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Blood Group ( रक्त गट )</b></label>
+                        <input type="text" class="form-control rounded-pill" id="aadharNumber" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Religion ( धर्म )</b></label>
+                        <input type="text" class="form-control rounded-pill" id="groupNumber">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Caste ( जात )</b></label>
+                        <input type="text" class="form-control rounded-pill" id="cropArea" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Caste Category ( जात वर्ग )</b></label>
+                        <input type="text" class="form-control rounded-pill" id="aadharNumber" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Caste Validity Number ( जात वैधता क्रमांक )</b></label>
+                        <input type="text" class="form-control rounded-pill" id="groupNumber">
+                    </div>
+                    <div class="mb-3">
+                        <label><b>Is Minority? (अल्पसंख्याक आहे?)</b></label><br>
+                        <input type="radio" name="radio1" id="r1"><b>Yes</b>
+                        <input type="radio" name="radio2" id="r2"><b>No</b>
+                    </div>
+    
+                </div>
+
+                <h4 class="sub">Parent Information (पालक माहिती)</h4>
+                <div class="mb-3">
+                    <label class="form-label"><b>Father's Full Name ( वडिलांचे पूर्ण नाव )</b></label>
+                    <input type="text" class="form-control rounded-pill" id="fullName" required>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Father's Email ( वडिलांचे ईमेल )
+                            </b></label>
+                        <input type="text" class="form-control rounded-pill" id="plantingDate" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Father's Mobile ( वडिलांचा मोबाईल नंबर )</b> </label>
+                        <input type="text" class="form-control rounded-pill" id="harvestDate" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Father's Occupation ( वडिलांचा व्यवसाय )
+                            </b></label>
+                        <input type="text" class="form-control rounded-pill" id="cropName" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label"><b>Mother's Name ( आईचे नाव )</b></label>
+                    <textarea class="form-control rounded-pill" id="address" rows="2" required></textarea>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Mother's Email ( आईचे ईमेल )</b></label>
+                        <input type="text" class="form-control rounded-pill" id="plantingDate" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Mother's Mobile Number ( आईचा मोबाईल नंबर )</b> </label>
+                        <input type="text" class="form-control rounded-pill" id="harvestDate" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Mother's Occupation ( आईचा व्यवसाय )
+                            </b></label>
+                        <input type="text" class="form-control rounded-pill" id="cropName" required>
+                    </div>
+                </div>
+
+                <h4 class="sub">Last Year Details with (TC/LC)/Migration/Eligibility Information
+                    ((TC/LC)/स्थलांतर/पात्रता माहितीसह मागील वर्षाचे तपशील)</h4>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label"><b>Last Attended Class ( शेवटचा वर्ग उपस्थित )
+                            </b></label>
+                        <input type="text" class="form-control rounded-pill" id="plantingDate" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label"><b>Last Attended Institute Name</b> </label>
+                        <input type="text" class="form-control rounded-pill" id="harvestDate" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label"><b>Last Examining Body ( Board/University )</b></label>
+                    <input type="text" class="form-control rounded-pill" id="fullName" required>
+                </div>
+
+                <h4 class="sub">Past Qualification Details (मागील पात्रता तपशील)</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Qualification Level ( पात्रता पातळी )
+                            </b></label>
+                        <input type="text" class="form-control rounded-pill" id="plantingDate" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Stream</b> </label>
+                        <input type="text" class="form-control rounded-pill" id="harvestDate" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Board/University (बोर्ड/विद्यापीठ)
+                            </b></label>
+                        <input type="text" class="form-control rounded-pill" id="cropName" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Institute State (संस्था राज्य)</b></label>
+                        <input type="text" class="form-control rounded-pill" id="plantingDate" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Institute District (संस्था जिल्हा)</b> </label>
+                        <input type="text" class="form-control rounded-pill" id="harvestDate" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Institute Taluka (संस्था तालुका)</b></label>
+                        <input type="text" class="form-control rounded-pill" id="cropName" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label"><b>College Name/School Name (कॉलेजचे नाव/शाळेचे नाव)</b></label>
+                        <input type="text" class="form-control rounded-pill" id="plantingDate" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label"><b>Course Name (अभ्यासक्रमाचे नाव)</b> </label>
+                        <input type="text" class="form-control rounded-pill" id="harvestDate" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Mode (मोड)</b></label>
+                        <input type="text" class="form-control rounded-pill" id="plantingDate" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Admission Year (प्रवेश वर्ष)</b> </label>
+                        <input type="text" class="form-control rounded-pill" id="harvestDate" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Passing Year (उत्तीर्ण वर्ष)</b></label>
+                        <input type="text" class="form-control rounded-pill" id="cropName" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Result (निकालपत्रक)</b></label>
+                        <input type="text" class="form-control rounded-pill" id="plantingDate" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Percentage (टक्केवारी)</b> </label>
+                        <input type="text" class="form-control rounded-pill" id="harvestDate" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label"><b>Attempts (प्रयत्न)</b></label>
+                        <input type="text" class="form-control rounded-pill" id="cropName" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label><b>Is there any Gap? (काही गॅप आहे का?)</b></label><br>
+                    <input type="radio" name="radio1" id="r1"><b>Yes</b>
+                    <input type="radio" name="radio2" id="r2"><b>No</b>
+                </div>
+
+
+
+
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-light bg-danger me-2 rounded-pill">Submit</button>
+                    <button type="reset" class="btn btn-light bg-success rounded-pill">Reset</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Education Form End -->
+
+
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+        {% endblock %}
+</body>
+
+</html>
